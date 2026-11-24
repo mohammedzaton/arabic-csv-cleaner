@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arabic-csv-cleaner"
+version = "0.1.0"
+description = "Local CSV cleanup for Arabic and mixed-language data"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "Mohammed Zaton", email = "mohammed.zaton2@gmail.com"}]
+keywords = ["arabic", "csv", "data-cleaning", "unicode"]
+dependencies = []
+
+[project.scripts]
+arabic-csv-cleaner = "arabic_csv_cleaner.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["arabic_csv_cleaner*"]
